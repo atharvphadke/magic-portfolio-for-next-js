@@ -1,45 +1,35 @@
-import { Logo } from "@/once-ui/components";
-
 const person = {
-  firstName: "Selene",
-  lastName: "Yu",
+  firstName: "Atharv",
+  lastName: "Phadke",
   get name() {
     return `${this.firstName} ${this.lastName}`;
   },
-  role: "Design Engineer",
+  role: "Graphic Designer | Branding & Packaging Specialist | Photographer",
   avatar: "/images/avatar.jpg",
-  email: "example@gmail.com",
-  location: "Asia/Jakarta", // Expecting the IANA time zone identifier, e.g., 'Europe/Vienna'
-  languages: ["English", "Bahasa"], // optional: Leave the array empty if you don't want to display languages
+  email: "meghanadphadke@gmail.com",
+  location: "Asia/Kolkata", // Expecting the IANA time zone identifier, e.g., 'Europe/Vienna'
+  languages: ["Marathi", "Hindi", "English", "Japanese (Beginner)"], // optional: Leave the array empty if you don't want to display languages
 };
 
 const newsletter = {
-  display: true,
+  display: false,
   title: <>Subscribe to {person.firstName}'s Newsletter</>,
   description: (
     <>
-      I occasionally write about design, technology, and share thoughts on the intersection of
-      creativity and engineering.
+      I share branding, packaging, and visual storytelling insights from my design practice.
     </>
   ),
 };
 
 const social = [
-  // Links are automatically displayed.
-  // Import new icons in /once-ui/icons.ts
   {
-    name: "GitHub",
-    icon: "github",
-    link: "https://github.com/once-ui-system/nextjs-starter",
+    name: "Behance",
+    icon: "openLink",
+    link: "https://www.behance.net/atharvphadke",
   },
   {
     name: "LinkedIn",
     icon: "linkedin",
-    link: "https://www.linkedin.com/company/once-ui/",
-  },
-  {
-    name: "X",
-    icon: "x",
     link: "",
   },
   {
@@ -55,16 +45,16 @@ const home = {
   label: "Home",
   title: `${person.name}'s Portfolio`,
   description: `Portfolio website showcasing my work as a ${person.role}`,
-  headline: <>Building bridges between design and code</>,
+  headline: <>Designing memorable brands and packaging experiences</>,
   featured: {
-    display: true,
-    title: <>Recent project: <strong className="ml-4">Once UI</strong></>,
-    href: "/work/building-once-ui-a-customizable-design-system",
+    display: false,
+    title: <>Recent project</>,
+    href: "/work",
   },
   subline: (
     <>
-      I'm Selene, a design engineer at <Logo icon={false} style={{ display: "inline-flex", top: "0.25em", marginLeft: "-0.25em" }}/>, where I craft intuitive
-      <br /> user experiences. After hours, I build my own projects.
+      I'm Atharv, a graphic designer focused on branding, packaging, and communication design.
+      <br /> I create visual systems that help brands connect with people.
     </>
   ),
 };
@@ -82,17 +72,22 @@ const about = {
     display: true,
   },
   calendar: {
+    display: false,
+    link: "",
+  },
+  resume: {
     display: true,
-    link: "https://cal.com",
+    label: "Download Resume",
+    href: "/resume.pdf",
   },
   intro: {
     display: true,
     title: "Introduction",
     description: (
       <>
-        Selene is a Jakarta-based design engineer with a passion for transforming complex challenges
-        into simple, elegant design solutions. Her work spans digital interfaces, interactive
-        experiences, and the convergence of design and technology.
+        Creative and detail-oriented graphic designer skilled in strategic visual communication,
+        branding, packaging, and digital design for Indian and international clients. Passionate
+        about crafting visuals that connect emotionally and communicate brand stories effectively.
       </>
     ),
   },
@@ -101,42 +96,56 @@ const about = {
     title: "Work Experience",
     experiences: [
       {
-        company: "FLY",
-        timeframe: "2022 - Present",
-        role: "Senior Design Engineer",
+        company: "Jnanaprabodhini (GyanSetu)",
+        timeframe: "May 2021 – Aug 2021",
+        role: "Graphic Design Intern",
         achievements: [
-          <>
-            Redesigned the UI/UX for the FLY platform, resulting in a 20% increase in user
-            engagement and 30% faster load times.
-          </>,
-          <>
-            Spearheaded the integration of AI tools into design workflows, enabling designers to
-            iterate 50% faster.
-          </>,
+          <>Designed educational visuals, banners, and e-learning materials.</>,
+          <>Contributed to print layout and storytelling for student modules.</>,
         ],
-        images: [
-          // optional: leave the array empty if you don't want to display images
-          {
-            src: "/images/projects/project-01/cover-01.jpg",
-            alt: "Once UI Project",
-            width: 16,
-            height: 9,
-          },
-        ],
+        images: [],
       },
       {
-        company: "Creativ3",
-        timeframe: "2018 - 2022",
-        role: "Lead Designer",
+        company: "S.N. Arts",
+        timeframe: "May 2022 – Apr 2023",
+        role: "Graphic Designer",
         achievements: [
-          <>
-            Developed a design system that unified the brand across multiple platforms, improving
-            design consistency by 40%.
-          </>,
-          <>
-            Led a cross-functional team to launch a new product line, contributing to a 15% increase
-            in overall company revenue.
-          </>,
+          <>Created promotional artwork, posters, and social-media content for regional brands.</>,
+          <>Worked on illustration-based concepts blending traditional and digital art.</>,
+          <>Assisted in client briefs, color planning, and final artwork production.</>,
+        ],
+        images: [],
+      },
+      {
+        company: "Addnectar Solutions Pvt. Ltd.",
+        timeframe: "Jun 2023 – Nov 2024",
+        role: "Graphic Designer",
+        achievements: [
+          <>Developed brand identities, packaging, and campaign visuals for international clients.</>,
+          <>Designed digital and print collateral aligned with marketing strategies.</>,
+          <>Collaborated with cross-functional teams to ensure visual consistency.</>,
+        ],
+        images: [],
+      },
+      {
+        company: "Office Beacon LLC",
+        timeframe: "Nov 2024 – Apr 2025",
+        role: "Graphic Designer",
+        achievements: [
+          <>Designed logos, mock-ups, and branding assets for U.S. clients.</>,
+          <>Created product packaging and promotional visuals for multiple industries.</>,
+          <>Delivered brand guidelines and marketing creatives for print and digital media.</>,
+        ],
+        images: [],
+      },
+      {
+        company: "Swiftin Solutions LLP",
+        timeframe: "Nov 2025 – Present",
+        role: "Graphic Designer",
+        achievements: [
+          <>Designed logos, mock-ups, and branding assets for product promotions.</>,
+          <>Created product packaging, catalogues, and brochures as per requirements.</>,
+          <>Delivered brand guidelines and marketing creatives for print and digital media.</>,
         ],
         images: [],
       },
@@ -144,53 +153,51 @@ const about = {
   },
   studies: {
     display: true, // set to false to hide this section
-    title: "Studies",
+    title: "Education",
     institutions: [
       {
-        name: "University of Jakarta",
-        description: <>Studied software engineering.</>,
+        name: "Yashwantrao Chavan Maharashtra Open University",
+        description: <>Bachelor of Design (BSc in Animation), 2017 – 2020.</>,
       },
       {
-        name: "Build the Future",
-        description: <>Studied online marketing and personal branding.</>,
+        name: "MIT School of Photography",
+        description: <>Certificate in Photography, 2015 – 2016.</>,
       },
     ],
   },
   technical: {
     display: true, // set to false to hide this section
-    title: "Technical skills",
+    title: "Skills",
     skills: [
       {
-        title: "Figma",
-        description: <>Able to prototype in Figma with Once UI with unnatural speed.</>,
-        // optional: leave the array empty if you don't want to display images
-        images: [
-          {
-            src: "/images/projects/project-01/cover-02.jpg",
-            alt: "Project image",
-            width: 16,
-            height: 9,
-          },
-          {
-            src: "/images/projects/project-01/cover-03.jpg",
-            alt: "Project image",
-            width: 16,
-            height: 9,
-          },
-        ],
+        title: "Design",
+        description: <>Photoshop, Illustrator, InDesign, CorelDRAW, Canva.</>,
+        images: [],
       },
       {
-        title: "Next.js",
-        description: <>Building next gen apps with Next.js + Once UI + Supabase.</>,
-        // optional: leave the array empty if you don't want to display images
-        images: [
-          {
-            src: "/images/projects/project-01/cover-04.jpg",
-            alt: "Project image",
-            width: 16,
-            height: 9,
-          },
-        ],
+        title: "Motion & Video",
+        description: <>After Effects, Premiere Pro.</>,
+        images: [],
+      },
+      {
+        title: "UI/UX",
+        description: <>Figma, Adobe XD.</>,
+        images: [],
+      },
+      {
+        title: "3D Design",
+        description: <>3ds Max.</>,
+        images: [],
+      },
+      {
+        title: "Technical",
+        description: <>HTML, CSS, Java.</>,
+        images: [],
+      },
+      {
+        title: "Extra Curricular",
+        description: <>Flute and harmonium (Madhyama Pratham certified), COVID care volunteering, and AI foundations coursework (Outskill, Guvi, HCL, Clappingo).</>,
+        images: [],
       },
     ],
   },
@@ -199,8 +206,8 @@ const about = {
 const blog = {
   path: "/blog",
   label: "Blog",
-  title: "Writing about design and tech...",
-  description: `Read what ${person.name} has been up to recently`,
+  title: "Design notes, branding stories, and creative process",
+  description: `Updates and thoughts from ${person.name}`,
   // Create new blog posts by adding a new .mdx file to app/blog/posts
   // All posts will be listed on the /blog route
 };
@@ -209,7 +216,7 @@ const work = {
   path: "/work",
   label: "Work",
   title: `Projects – ${person.name}`,
-  description: `Design and dev projects by ${person.name}`,
+  description: `Branding, packaging, and visual design projects by ${person.name}`,
   // Create new project pages by adding a new .mdx file to app/blog/posts
   // All projects will be listed on the /home and /work routes
 };
