@@ -1,5 +1,6 @@
-// IMPORTANT: Replace with your own domain address - it's used for SEO in meta tags and schema
-const baseURL = "https://demo.magic-portfolio.com";
+// IMPORTANT: Set NEXT_PUBLIC_BASE_URL in your environment (e.g. https://your-domain.com)
+// Fallback keeps local development working out of the box.
+const baseURL = process.env.NEXT_PUBLIC_BASE_URL || "http://localhost:3000";
 
 const routes = {
   "/": true,

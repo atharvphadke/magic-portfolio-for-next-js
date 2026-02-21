@@ -148,6 +148,16 @@ export default function About() {
             >
               {person.role}
             </Text>
+            {about.resume.display && (
+              <Button
+                className={styles.blockAlign}
+                href={about.resume.href}
+                label={about.resume.label}
+                size="m"
+                variant="primary"
+                suffixIcon="download"
+              />
+            )}
             {social.length > 0 && (
               <Flex className={styles.blockAlign} paddingTop="20" paddingBottom="8" gap="8" wrap horizontal="center" fitWidth data-border="rounded">
                 {social.map(

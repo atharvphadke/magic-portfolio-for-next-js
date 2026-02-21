@@ -24,6 +24,13 @@ npm install
 npm run dev
 ```
 
+
+**Environment setup (updated)**
+```
+cp .env.example .env.local
+# then edit .env.local and set NEXT_PUBLIC_BASE_URL + PAGE_ACCESS_PASSWORD
+```
+
 **4. Edit config**
 ```
 src/app/resources/config
@@ -38,6 +45,18 @@ src/app/resources/content
 ```
 Add a new .mdx file to src/app/blog/posts or src/app/work/projects
 ```
+
+
+## **Use your own resume and portfolio content**
+
+To make this portfolio truly yours:
+
+1. Update personal details and page content in `src/app/resources/content.js`
+2. Add your resume PDF to `public/` (for example `public/resume.pdf`)
+3. In `src/app/resources/content.js`, set `about.resume.display` to `true` and confirm `about.resume.href` points to your file
+4. Add your own project `.mdx` files in `src/app/work/projects`
+
+This gives you a downloadable resume button on the About page and your own portfolio data across the app.
 
 # **Documentation**
 
